@@ -8,6 +8,8 @@ async function connectDB() {
         dbConfig, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
+            useCreateIndex: true,
+            useFindAndModify: false
         },
         () => console.log("Connected to DB")
     );
